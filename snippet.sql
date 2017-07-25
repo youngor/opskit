@@ -46,4 +46,10 @@ order by site
 -- SELECT * from data_info_t  ORDER BY id ASC limit 1
 
 
+-- 去重
+create table dust 
+SELECT * from car_info_t  where site in 
+(1,3,4,7,124,6,139,11,8,9,134,144,107,5,136,103,120,110,117,156,102,101,114,137,126,158,142,157,113,118,129)
+and input_date >= '2016-01-01' and input_date < '2017-01-01' 
+GROUP BY city,title,site,input_date,price
 
