@@ -53,3 +53,8 @@ SELECT * from car_info_t  where site in
 and input_date >= '2016-01-01' and input_date < '2017-01-01' 
 GROUP BY city,title,site,input_date,price
 
+-- 写文件
+
+into outfile '/tmp/abc0717_new1.xls'
+ CHARACTER SET gbk
+ 
